@@ -1,4 +1,4 @@
-# 🎟️ Ticket Management System — React Version
+# 🎟️ Ticket Management System
 
 A responsive and accessible **Ticket Management Web App** built with **React** as part of the **HNGi13 Stage 2 Frontend Task**.
 
