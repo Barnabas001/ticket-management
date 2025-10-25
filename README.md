@@ -1,70 +1,143 @@
-# Getting Started with Create React App
+# 🎟️ Ticket Management System — React Version
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive and accessible **Ticket Management Web App** built with **React** as part of the **HNGi13 Stage 2 Frontend Task**.
 
-## Available Scripts
+This project demonstrates key frontend engineering concepts such as component-based architecture, state management, form validation, data persistence with localStorage, and responsive UI design.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🏠 Landing Page
+- Full-height hero section with call-to-action buttons.
+- Consistent color scheme (blue & lemon gradient).
+- Fully responsive layout for desktop, tablet, and mobile.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🔐 Authentication Screen
+- Mock login system with validation (`admin / 1234`).
+- Stores session token in `localStorage`.
+- Displays error messages for invalid credentials.
 
-### `npm test`
+### 📊 Dashboard
+- Displays ticket statistics:
+  - Total Tickets  
+  - Open Tickets  
+  - Resolved Tickets  
+- Includes quick actions to:
+  - Manage Tickets  
+  - Seed Demo Tickets  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🎫 Ticket Management
+- LocalStorage-based CRUD system (Create, Read, Update, Delete).
+- Inline editing and deletion.
+- Form validation to prevent empty submissions.
+- Responsive table layout for all screen sizes.
 
-### `npm run build`
+### ♿ Accessibility
+- Semantic HTML structure.
+- ARIA labels and roles for screen reader support.
+- Keyboard-navigable form inputs and buttons.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧱 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Technology | Purpose |
+|-------------|----------|
+| **React (Vite or CRA)** | UI Framework |
+| **CSS3 / Flexbox / Media Queries** | Styling & Responsive Design |
+| **localStorage API** | Persistent Data Storage |
+| **JSX + ES6 Modules** | Component Logic |
+| **Git / GitHub** | Version Control & Hosting |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Installation & Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/<your-username>/ticket-management-react.git
+cd ticket-management-react
+2️⃣ Install Dependencies
+If you used Create React App:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Copy code
+npm install
+Or for Vite setup:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+bash
+Copy code
+npm install
+3️⃣ Run the App
+bash
+Copy code
+npm start
+Then visit 👉 http://localhost:3000 in your browser.
 
-## Learn More
+🧩 Project Structure
+pgsql
+Copy code
+ticket-management-react/
+├── public/
+│   └── index.html
+├── src/
+│   ├── App.jsx          # Main React component (Landing, Login, Dashboard, Tickets)
+│   ├── index.js
+│   ├── styles.css       # Global responsive styling
+│   └── assets/          # SVGs and shared graphics
+├── package.json
+└── README.md
+🧠 How It Works
+On launch, users land on the Landing Page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clicking “Get Started” leads to the Login Page.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+After successful login, a token is saved to localStorage, and the Dashboard loads.
 
-### Code Splitting
+Dashboard statistics read from stored tickets.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Clicking “Manage Tickets” opens the Ticket Management screen, where users can:
 
-### Analyzing the Bundle Size
+Add new tickets
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Edit existing tickets
 
-### Making a Progressive Web App
+Delete tickets
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Data persists between reloads.
 
-### Advanced Configuration
+📱 Responsiveness
+The app automatically adapts across devices:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+✅ Desktop (≥ 1024px)
 
-### Deployment
+✅ Tablet (768–1023px)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+✅ Mobile (≤ 767px)
 
-### `npm run build` fails to minify
+It uses CSS flexbox and media queries to ensure consistent design and usability.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🔐 Demo Credentials
+Username	Password
+admin	1234
+
+📸 Screenshots
+(You can replace these with your own)
+
+Landing Page	Dashboard	Tickets
+
+🧑‍💻 Author
+Barnabas Olayinka Affonshike
+Frontend Developer | HNGi13 Cohort
+📧 Email: barnabasolayinka@gmail.com
+🌐 Portfolio: https://vercel.com/barnabas001s-projects
+
+🏁 Next Steps
+Implement backend integration (e.g., Node.js + Express API)
+
+Add authentication using JWT
+
+Deploy to Vercel or Netlify
+
+✨ Built with passion and precision for the HNGi13 Frontend Task.
